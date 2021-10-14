@@ -6,28 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="85dp"
-        android:layout_height="25dp"
-        android:text="EL MAPA"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="441dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="157dp"
-        android:layout_height="21dp"
-        android:text="        MAPAMUNDISIMO"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
-        tools:layout_editor_absoluteX="223dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="220dp"
         android:layout_height="117dp"
+        android:layout_marginStart="96dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:srcCompat="@android:drawable/ic_menu_mapmode"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="138dp" />
+        tools:layout_editor_absoluteY="251dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="53dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
