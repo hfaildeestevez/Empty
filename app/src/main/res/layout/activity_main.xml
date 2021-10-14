@@ -10,20 +10,26 @@
         android:id="@+id/textView"
         android:layout_width="172dp"
         android:layout_height="30dp"
+        android:layout_marginTop="100dp"
         android:text="        MAPAMUNDISIMO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="51dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="220dp"
         android:layout_height="117dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_mapmode"
-        tools:layout_editor_absoluteY="366dp" />
+        tools:layout_editor_absoluteY="155dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="85dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:text="EL MAPA"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        tools:layout_editor_absoluteY="201dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
